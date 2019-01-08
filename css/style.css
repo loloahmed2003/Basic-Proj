@@ -1,0 +1,468 @@
+body {
+    padding-top: 55px;
+    direction: rtl;
+    background: linear-gradient(#A96B70, #00AAB2);
+}
+
+h1 {
+    color: red
+}
+
+
+/* Start nav */
+
+.bg-dark {
+    background-color: #A96B70!important;
+}
+
+.trans {
+    background-color: rgba(169, 107, 112, 0.6)!important;
+}
+
+/* add when scrolltop>1 */
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 20px
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #C6BBCC;
+    transition: .3s
+}
+
+.active {
+    color: #C6BBCC!important
+}
+
+.active-scroll {
+    background-color: #C6BBCC
+}
+
+
+/*to change color of icon using svg*/
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important
+}
+
+/*social icons*/
+
+.social_icons {
+    margin-left: 125px
+}
+
+.smGlobalBtn {
+    /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+    border-radius: 25px;
+
+}
+
+/* facebook button class*/
+
+.facebookBtn {
+    background: #4060A5;
+}
+
+.facebookBtn:before {
+    /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a";
+    /* add facebook icon */
+}
+
+.facebookBtn:hover {
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+
+.twitterBtn {
+    background: #00ABE3;
+}
+
+.twitterBtn:before {
+    font-family: "FontAwesome";
+    content: "\f099";
+    /* add twitter icon */
+}
+
+.twitterBtn:hover {
+    color: #00ABE3;
+    background: #fff;
+}
+
+/* google plus button class*/
+
+.googleplusBtn {
+    background: #e64522;
+}
+
+.googleplusBtn:before {
+    font-family: "FontAwesome";
+    content: "\f0d5";
+    /* add googleplus icon */
+}
+
+.googleplusBtn:hover {
+    color: #e64522;
+    background: #fff;
+}
+
+/* linkedin button class*/
+
+.linkedinBtn {
+    background: #0094BC;
+}
+
+.linkedinBtn:before {
+    font-family: "FontAwesome";
+    content: "\f0e1";
+    /* add linkedin icon */
+}
+
+.linkedinBtn:hover {
+    color: #0094BC;
+    background: #fff;
+}
+
+/* pinterest button class*/
+
+.pinterestBtn {
+    background: #cb2027;
+}
+
+.pinterestBtn:before {
+    font-family: "FontAwesome";
+    content: "\f0d2";
+    /* add pinterest icon */
+}
+
+.pinterestBtn:hover {
+    color: #cb2027;
+    background: #fff;
+}
+
+/* tumblr button class*/
+
+.tumblrBtn {
+    background: #3a5876;
+}
+
+.tumblrBtn:before {
+    font-family: "FontAwesome";
+    content: "\f173";
+    /* add tumblr icon */
+}
+
+.tumblrBtn:hover {
+    color: #3a5876;
+    background: #fff;
+}
+
+/* rss button class*/
+
+.rssBtn {
+    background: #e88845;
+}
+
+.rssBtn:before {
+    font-family: "FontAwesome";
+    content: "\f09e";
+    /* add rss icon */
+}
+
+.rssBtn:hover {
+    color: #e88845;
+    background: #fff;
+}
+
+
+/* End social icons*/
+
+@media screen and (max-width: 767px) {
+    .active {
+        color: #C6BBCC !important;
+        background-color: transparent;
+    }
+
+    .bg-dark {
+        background-color: #A96B70!important;
+    }
+    body {
+        padding-top: 40px
+    }
+    .social_icons {
+        display: none
+    }
+
+}
+
+/* end nav */
+
+/* start header */
+
+header {
+    background: #A96B70;
+
+    max-height: 300px;
+}
+
+header form {
+    margin-top: 2.3rem
+}
+
+header .btn {
+    border: 1px solid #C6BBCC!important;
+    color: #fff;
+    background-color: transparent
+}
+
+header .btn:hover {
+    background-color: #C6BBCC;
+    cursor: pointer;
+}
+
+header h1 {
+    vertical-align: middle;
+    color: #013162
+}
+
+
+
+.pop {
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes pop {
+    50% {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.pop {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+}
+
+.pop:hover {
+    -webkit-animation-name: pop;
+    animation-name: pop;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1
+}
+
+@media screen and (max-width: 767px) {
+
+    header img {
+        text-align: center!important
+    }
+    header h1 {
+        font-size: 35px
+    }
+    header form {
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    header form {
+        width: 60%
+    }
+}
+
+@media screen and (max-width : 576px) {
+    header .form-control {
+        display: inline-block;
+        width: 70%;
+    }
+    header form {
+        width: 80%
+    }
+}
+
+@media screen and (max-width : 384px) {
+    header .form-control {
+        display: block;
+        width: 100%
+    }
+
+}
+
+/* end header */
+
+/*slider*/
+
+@media screen and (max-width: 767px) {
+
+    .carousel {
+        display: none
+    }
+}
+
+/*slider*/
+
+/*top_places*/
+
+.top_places {
+    background: #fff
+}
+
+.top_places h2 {
+    color: #013162
+}
+
+.place {
+    position: relative;
+    overflow: hidden
+}
+
+.place-img {
+    border-radius: 8px;
+    ;
+}
+
+/* .place a{display: block;} */
+
+/* .place-hover{position: relative;z-index: 1}
+ .place-hover:hover::after{
+     z-index: 0;
+    position: absolute;
+    top:0px;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(169, 107, 112, 0.6),rgba(198, 187, 204, 0.8))
+}  */
+
+.overlay {
+    background: linear-gradient(rgba(169, 107, 112, 0.6), rgba(198, 187, 204, 0.8));
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.overlay .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #013162;
+    font-size: 25px;
+    font-weight: bold
+}
+
+.place:hover .overlay {
+    height: 100%;
+}
+
+.overlay a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.top_places .btn {
+    width: 300px;
+    border-color: #00AAB2;
+    color: #00AAB2
+}
+
+.top_places .btn:hover,
+.top_places .btn:active {
+    background-color: #00AAB2;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff
+}
+
+.top_places .btn:active {
+    outline: none
+}
+
+@media screen and (max-width:350px) {
+    .top_places .btn {
+        width: 200px
+    }
+    header h1 {
+        font-size: 30px
+    }
+
+}
+
+/*End_top_places*/
+
+/*footer*/
+
+footer {
+    height: 70px;
+    background: #013162;
+    color: #C6BBCC;
+    line-height: 70px;
+    overflow: hidden;
+}
+
+footer .links {
+    list-style: none
+}
+
+footer .links li {
+    display: inline-block
+}
+
+footer .links li a {
+    color: #C6BBCC;
+    text-decoration: none
+}
+
+footer .links li a:hover {
+    color: #A96B70
+}
+
+/* footer .social{line-height:70px } */
